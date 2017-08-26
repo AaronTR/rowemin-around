@@ -1,0 +1,28 @@
+.page-content {
+    padding: $spacing-unit 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.content-container{
+    margin-top: 5em;
+    text-align: center;
+
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($medium-width) {
+        font-size: 36px;
+    }
+}
+
+header.post-header{
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -1,0 +1,33 @@
+{% if(include.isFeatured) %}
+<div class="featured-link-container">
+{% if(include.featuredHeader) %}
+<h2><i class="fa fa-star" aria-hidden="true"></i>Featured Post<i class="fa fa-star" aria-hidden="true"></i></h2>
+{% endif %}
+<a class="blog-link featured-link" href="{{post.url | prepend: site.baseurl}}">
+{% else %}
+<a class="blog-link" href="{{post.url | prepend: site.baseurl}}">
+{% endif %}
+    <div class="push-pin">
+        <div class="top">
+        </div>
+        <div class="middle">
+        </div>
+        <div class="bottom">
+        </div>
+    </div>
+    <img src="{{post.images[0].url | prepend: site.baseurl}}" alt="post.images[0].alt">
+    <div class="post-info">
+        <div class="info-wrapper">
+        <h3>{{post.title}}</h3>
+        <div class="post-break">
+            <div class="icon-container">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            </div>
+        </div>
+        <span>{{post.description}}</span>
+        </div>
+    </div>
+</a>
+{% if(include.isFeatured) %}
+</div>
+{% endif %}

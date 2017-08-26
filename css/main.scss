@@ -1,0 +1,46 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@import 'bourbon/bourbon';
+@import 'neat';
+
+// Our variables
+$base-font-family: 'Montserrat', sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #444;
+$text-color-alt: #444;
+$background-color: #FEFEFA;
+$brand-color-green: #97D8B2;
+$brand-color-purple: #5B507A;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+$highlight-color: $brand-color-green;
+
+// Width of the content area
+$large-width:    1200px;
+
+$small-width:          767px;
+$medium-width:        997px;
+$super-small-width: 600px;
+
+// Minima also includes a mixin for defining media queries.
+// Use media queries like this:
+// @include media-query($small-width) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// Import partials from the `minima` theme.
+@import "aarontr";

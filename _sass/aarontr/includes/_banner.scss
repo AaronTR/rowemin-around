@@ -1,0 +1,65 @@
+@include media-query($medium-width) {
+
+    body .banner-container{
+      height: 400px;
+    }
+
+}
+
+.banner-section{
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+
+    img{
+        width: 100%;
+        margin-top: -10%;
+    }
+
+    .banner-text{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        color: white;
+        z-index: 2;
+        width: 35%;
+
+        h1{
+            margin: 0;
+            font-size: 3.5em;
+        }
+    }
+}
+
+.banner-container{
+  position: relative;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 40%;
+}
+
+.banner-container h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3em;
+    line-height: 1em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(151,0,151,0.2);
+    vertical-align: middle;
+    margin: 0px;
+    position: relative;
+    display: flex;
+}
+
+.banner-container h3 span {
+    flex-basis: 100%;
+    align-self: center;
+    padding: 0px 50px;
+
+    @include media-query($small-width){
+        padding: 0px 25px;
+    }
+}

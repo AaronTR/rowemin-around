@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<header class="post-header blog-header-content work-content">
+	{% include banner.html title="Work" %}
+</header>
+<div class="wrapper">
+	<article class="post">
+	  <div class="post-content">
+	    {{ content }}
+	  </div>
+	  {% include posts-list.html listClass="blog-page-posts" category=site.categories.work  hasFeatured=true featuredHeader=true %}
+	</article>
+</div>

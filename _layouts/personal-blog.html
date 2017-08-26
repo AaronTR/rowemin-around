@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<header class="post-header blog-header-content personal-content">
+	{% include banner.html title="Personal" %}
+</header>
+<div class="wrapper">
+	<article class="post">
+
+	  <div class="post-content">
+	    {{ content }}
+	  </div>
+	  {% include posts-list.html listClass="blog-page-posts" category=site.categories.personal hasFeatured=true featuredHeader=true %}
+	</article>
+</div>

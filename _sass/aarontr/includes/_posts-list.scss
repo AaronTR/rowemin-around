@@ -1,0 +1,123 @@
+.latest-posts{
+    &:not(.home-listing) .featured-link-container{
+        padding: 50px;
+        margin-bottom: 50px;
+
+        @include media-query($small-width) {
+            padding: 0px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .featured-link-container {
+        background: #97D8B2;
+        flex-basis: 100%;
+
+        h2{
+            text-align: center;
+            color: #fefefa;
+            text-transform: uppercase;
+            margin: 0;
+
+            @include media-query($small-width) {
+                padding-top: 25px;
+            }
+
+            i.fa.fa-star {
+                padding: 5px;
+            }
+        }
+    }
+
+    &.blog-page-posts{
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+
+        a.blog-link:not(.featured-link) {
+            flex-basis: 50%;
+
+            @include media-query($medium-width) {
+                flex-basis: 80%;
+                margin: auto;
+            }
+
+            @include media-query($small-width) {
+                flex-basis: 90%;
+            }
+        }
+
+        .blog-link{
+            .post-info{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.blog-page-posts .featured-link .post-info h3{
+    font-size: 2.5em;
+    line-height: 1em;
+
+    @include media-query($super-small-width){
+        font-size: 1.5em;
+    }
+}
+
+.featured-post .post-info .post-break {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    @include media-query($super-small-width){
+        font-size: 0.8em;
+    }
+}
+
+.blog-link:not(.featured-link) h3 {
+    font-size: 2em;
+    line-height: 1em;
+
+    @include media-query($super-small-width){
+        font-size: 1.5em;
+    }
+}
+
+
+.blog-link:not(.featured-link) .post-info span {
+    font-size: 1em;
+    line-height: 1em;
+
+    @include media-query($super-small-width){
+        font-size: 0.9em;
+    }
+}
+
+.blog-link:not(.featured-link) .post-break i {
+    font-size: 1em;
+
+    @include media-query($super-small-width){
+        font-size: 0.9em;
+    }
+}
+.latest-posts {
+    display: flex;
+}
+
+.latest-posts a {
+    display: inline-block;
+    padding: 15px;
+}
+
+.blog-list{
+  text-align: left;
+}
+
+.latest-posts {
+    flex-wrap: wrap;
+}
+

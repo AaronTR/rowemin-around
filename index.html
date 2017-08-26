@@ -1,0 +1,75 @@
+---
+layout: home-page
+---
+
+  <section class="about-section">
+    <div class="about-floater">
+      <div class="wrapper">
+        <div class="about-image">
+          <div class="image-wrapper">
+            <img src="/assets/images/sweaty_selfie.jpg" alt="My Smiling Face">
+          </div>
+        </div>
+        <div class="about-content">
+          <h2 class="about-header">Hi, my name is Aaron Rowe.</h2>
+          <p>
+            I am a professional Web Developer, Amateur Writer, Mediocre Photographer, and Awful Hula-hoopist from Topeka, Kansas.
+            <br/>
+            <br/>
+            This June I decided to take the show on the road and pursue my dream of traveling the world.
+            I've created this site to share my explorations in long-term travel, remote work, and not taking myself too seriously.
+            <br />
+            <br />
+            Life's a trip. Explore it with me!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="home-break-section">
+    <div class="home-break">
+      <div class="icon-container">
+        <i class="fa fa-globe" aria-hidden="true"></i>
+      </div>
+    </div>
+    <h2>So What's New?</h2>
+    <div class="home-break">
+      <div class="icon-container">
+        <i class="fa fa-globe" aria-hidden="true"></i>
+      </div>
+    </div>
+  </section>
+  <section class="blog-section">
+    <div class="callout travel-callout">
+      <i class="fa fa-plane" aria-hidden="true"></i>
+      <h3>I've Been Busy Traveling Around...</h3>
+      <p>Click on one of these bad boys if you'd like to follow along.</p>
+      <div class="callout-content">
+        {% include posts-list.html listClass="home-listing" category=site.categories.travel hasFeatured=true postLimit=site.travel_post_count %}
+      </div>
+    </div>
+    <div class="minor-callout-wrapper">
+      <div class="callout work-callout">
+        <i class="fa fa-laptop" aria-hidden="true"></i>
+        <h3>...Building Internets...</h3>
+        <p>These ones here are full of coding goodness.</p>
+        <div class="callout-content">
+          {% include posts-list.html listClass="home-listing" category=site.categories.work postLimit=site.work_post_count %}
+        </div>
+      </div>
+      <div class="callout personal-callout">
+        <i class="fa fa-male" aria-hidden="true"></i>
+        <h3>...And trying to have a life.</h3>
+        <p>Just like in life, who knows what you'll find here?</p>
+        <div class="callout-content">
+          {% include posts-list.html listClass="home-listing" category=site.categories.personal postLimit=site.personal_post_count %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-request">
+    <div class="contact-request-callout">
+      <h3>If all that wasn't enough for you, or if you're interested in working with me, you can always...</h3>
+      <i class="fa fa-arrow-down" aria-hidden="true"></i>
+    </div>
+  </section>

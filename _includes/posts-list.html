@@ -1,0 +1,22 @@
+<div class="latest-posts {{include.listClass}}">
+    {% for post in include.category %}
+        {% if include.hasFeatured %}
+            {% if forloop.index == 1 %}
+                {% if include.featuredHeader %}
+                    {% include post-listing.html isFeatured=true featuredHeader=true %}
+                {% else %}
+                    {% include post-listing.html isFeatured=true %}
+                {% endif %}
+            {% else %}
+                {% include post-listing.html %}
+            {% endif %}
+        {% else %}
+            {% include post-listing.html %}
+        {% endif %}
+        {% if include.postLimit %}
+            {% if forloop.index == include.postLimit %}
+                {% break %}
+            {% endif %}
+        {% endif %}
+    {% endfor%}
+</div>

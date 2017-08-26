@@ -1,0 +1,103 @@
+.post-break .icon-container::before{
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  background: #fff;
+  left: -55px;
+  top: 50%;
+}
+
+.post-break .icon-container::after{
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  position: absolute;
+  background: #fff;
+  right: -55px;
+  top: 50%;
+}
+
+.icon-container {
+    display: inline-block;
+    position: relative;
+}
+
+.icon-container::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    position: absolute;
+    background: #97D8B2;
+    left: -210px;
+    top: 50%;
+}
+
+.icon-container::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    position: absolute;
+    background: #97D8B2;
+    right: -210px;
+    top: 50%;
+}
+
+.image-wrapper::before {
+    content: '';
+    display: block;
+    width: 105%;
+    height: 105%;
+    position: absolute;
+    background: #97D8B2;
+    top: -5%;
+    left: -5%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+a.blog-link {
+    position: relative;
+}
+
+.post-info {
+    margin: 15px;
+    background: rgba(151,0,0,0.25);
+    background: -moz-linear-gradient(left, rgba(151, 0, 151, 0.2) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(151, 0, 151, 0.25) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(151, 0, 151, 0.2) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(151, 0, 151, 0.25) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(151, 0, 151, 0.2) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(151, 0, 151, 0.25) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 8px 8px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.post-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.post-info {
+    color: #FEFEFA;
+}
+
+.info-wrapper {
+    padding: 50px;
+    text-align: center;
+    flex-basis: 100%;
+
+    @include media-query($small-width){
+        padding: 25px;
+    }
+}
+
+.image-wrapper {
+    position: relative;
+    overflow: visible;
+}

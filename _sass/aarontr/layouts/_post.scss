@@ -1,0 +1,149 @@
+.post-content {
+    padding: 50px;
+    text-align: left;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($medium-width) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($medium-width) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($medium-width) {
+            font-size: 18px;
+        }
+    }
+}
+
+.blog-post-content{
+    .banner-container{
+        height: 400px;
+        background-position-y: 33%;
+    }
+}
+
+.blog-post-content{
+    margin-top: $header-height;
+}
+
+.blog-post-container{
+    .post-content{
+
+        .post-image{
+            padding-top: 75px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        iframe{
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }
+}
+
+article.post{
+    width: 90%;
+    margin: auto;
+
+    @include media-query($medium-width) {
+        width: 100%;
+    }
+    
+    a{
+        color: $highlight-color;
+    }
+
+    .secondary-image-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .secondary-wrapper {
+        flex-basis: 33%;
+    }
+
+    .blog-post-aside {
+        display: flex;
+        background: $highlight-color;
+        padding: 25px;
+        margin-bottom: 15px;
+        color: #fff
+    }
+
+    .blog-post-aside div {
+        flex-basis: 25%;
+    }
+
+    .blog-post-aside p {
+        flex-basis: 75%;
+        padding-left: 15px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .blog-post-aside span {
+        font-size: 0.75em;
+        font-style: italic;
+    }
+
+    .post-image-container .image-col {
+        width: 49%;
+        margin: 0;
+        display: inline-block;
+
+        img{
+            width: 100%;
+        }
+    }
+    
+    .post-image-container {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    .post-image-insert {
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+        font-style: italic;
+        font-size: 0.85em;
+        width: 80%;
+
+        @include media-query($medium-width){
+            width: 100%;
+        }
+
+        .image-col{
+            width: 49%;
+            display: inline-block;
+
+            @include media-query($small-width){
+                width: 100%;
+            }
+        }
+    }
+    
+    .post-image-insert img {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+}
+
